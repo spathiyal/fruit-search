@@ -19,7 +19,7 @@ const fruit = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackb
 // call search function to trigger showSuggestion to show dropdown values
 function searchHandler(e) {
   e.preventDefault();
-  showSuggestions(search(e.target.value, e.target.value));
+  showSuggestions(search(e.target.value), e.target.value);
    
 }
 
