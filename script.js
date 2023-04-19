@@ -29,10 +29,10 @@ function showSuggestions(results, inputVal) {
   suggestions.innerHTML = "";
 
   if (results.length != 0) {
-    for (let i = 0; i < results.length; i++) {
+    for (let val of results) {
       suggestionsDiv.style.display = "inline-block";
       let el = document.createElement("li");
-      el.textContent = results[i];
+      el.textContent = val;
       suggestions.appendChild(el);
     }
   }
